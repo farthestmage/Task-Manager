@@ -1,7 +1,7 @@
 import typer
 from model import Task,datetime
 from data import read,write
-from erros import TaskNotFoundError
+from errors import TaskNotFoundError
 
 
 
