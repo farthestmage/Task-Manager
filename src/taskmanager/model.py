@@ -12,4 +12,10 @@ class Task:
     def __str__(self):
        return f" {self.task_name} {self.status} \n   {self.description}"
     
+    def mark_in_prog(self):
+        self.status= "in-progress"
+    def makr_done(self):
+        self.status = "done"
+
+    
     

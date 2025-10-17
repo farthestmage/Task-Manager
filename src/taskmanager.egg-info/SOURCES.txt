@@ -1,0 +1,12 @@
+pyproject.toml
+src/taskmanager/__init__.py
+src/taskmanager/app.py
+src/taskmanager/data.py
+src/taskmanager/errors.py
+src/taskmanager/model.py
+src/taskmanager.egg-info/PKG-INFO
+src/taskmanager.egg-info/SOURCES.txt
+src/taskmanager.egg-info/dependency_links.txt
+src/taskmanager.egg-info/entry_points.txt
+src/taskmanager.egg-info/top_level.txt
+test/test.py

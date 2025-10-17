@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: taskmanager
+Version: 0.1.0
+Summary: A simple task manager package
+Author-email: Arnav Kamboj <arnavkamboj511@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/farthestmage/Task-Manager

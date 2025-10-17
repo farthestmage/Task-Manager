@@ -10,8 +10,15 @@ def read():
         return {}
 def write(data:dict):
     with open("task.json","w") as f:
+        f.seek(0)
         f.write(json.dumps(data))
-        
+
+
+
+
+
+
+
 '''
 Expected ->
     { 1: { .. task...

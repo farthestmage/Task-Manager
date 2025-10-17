@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "taskmanager"
+version = "0.1.0"
+description = "A simple task manager package"
+authors = [
+    { name = "Arnav Kamboj", email = "arnavkamboj511@gmail.com" }
+]
+license = { text = "MIT" }
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/farthestmage/Task-Manager"
+
+[project.scripts]
+task-cli = "taskmanager.app:app"
