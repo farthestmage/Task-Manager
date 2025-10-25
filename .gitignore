@@ -3,3 +3,5 @@
 *.json
 task.json
 
+./src/taskmanager.egg-info
+./build

@@ -105,7 +105,10 @@ def list(optional: Annotated[str, typer.Argument()] = None):
     if optional == None:
         for id,task in task_dict.items():
             temp_t = Task(**task)
-            print(f"{int(id)+1} {temp_t}")
+            if temp_t.status == "done":
+                continue
+            else:
+                print(f"{int(id)+1} {temp_t}")
     if optional == "done":
          for id,task in task_dict.items():
             temp_t = Task(**task)

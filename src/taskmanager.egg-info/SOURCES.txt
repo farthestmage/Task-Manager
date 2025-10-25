@@ -2,6 +2,7 @@ pyproject.toml
 src/taskmanager/__init__.py
 src/taskmanager/app.py
 src/taskmanager/data.py
+src/taskmanager/database.py
 src/taskmanager/errors.py
 src/taskmanager/model.py
 src/taskmanager.egg-info/PKG-INFO
