@@ -33,6 +33,12 @@ def update_json_data(id:int ,task: Task,task_dict):
     write(data=task_dict)
     task_dict= read_json_data()
 
+def delete_json_data(id:int,task_dict):
+    del task_dict[str(id-1)]
+
+    write(data=task_dict)
+    task_dict=read_json_data()
+
 task_dict = read_json_data()
 
 
@@ -66,6 +72,21 @@ def update(id:int,task_name:str):
                 
    except TaskNotFoundError as e:
        print(e)
+
+@app.command()
+def delete(id:int):
+    try:
+        for id_task in task_dict.keys():
+            if (id-1) == int(id_task):
+                #del task_dict[id_task]
+                delete_json_data(id,task_dict)
+                print("DELETED")
+                return
+        raise TaskNotFoundError("Task ID not found")
+            
+    except TaskNotFoundError as e:
+        print(e)
+
 
 @app.command("mark-in-progress")
 def mark_in_progress(id: int):

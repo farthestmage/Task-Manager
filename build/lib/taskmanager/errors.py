@@ -1,4 +1,0 @@
-
-
-class TaskNotFoundError(Exception):
-    pass
