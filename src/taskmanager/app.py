@@ -25,7 +25,7 @@ def write_json_data(new_task : Task,task_dict:dict={}):
 
 
 def update_json_data(id:int ,task: Task,task_dict):
-    task_dict[id-1]={"task_name":task.task_name,
+    task_dict[str(id-1)]={"task_name":task.task_name,
                 "description":task.description,
                 "status":task.status,
                 "createdAt":task.createdAt,
