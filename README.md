@@ -2,6 +2,7 @@
 
 **Task CLI** is a simple and efficient command-line interface tool for managing your daily tasks.
 Add, update, delete, or track your tasks directly from your terminal — no web UI required.
+
 ---
 
 ## Features
